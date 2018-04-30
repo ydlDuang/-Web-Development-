@@ -1,0 +1,279 @@
+p{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+a{
+	text-decoration: none;
+}
+
+select,input{
+	border: none;
+	outline: none;
+}
+
+/* top 模块内样式*/
+.top{
+	line-height: 30px;
+	font-size: 13px;
+	color: #868686;
+}
+
+.top .call{
+	float: left;
+	padding-left: 20px;
+	background: url(../img/icon-call.png) no-repeat center left;
+}
+
+.top a{
+	color: #2da5e1;
+	padding-left: 10px;
+}
+
+.top .welcome{
+	float: right;
+}
+
+/*header模块内样式*/
+.header .logo{
+	width: 402px;
+	height: 74px;
+	padding: 9px;
+	display: inline-block;
+}
+
+.header .logo img{
+	width: 100%;
+	height: 100%;
+}
+
+.header .search{
+	width: 326px;
+	height: 38px;
+	position: absolute;
+	right: 0;
+	top: 29px;
+}
+
+/*nav模块内样式*/
+.nav .link{
+	display: inline-block;
+	float: left;
+	padding: 0 15px;
+	line-height: 36px;
+	color: #fff;
+	font-size: 16px;
+	min-width: 80px;
+	text-align: center;
+}
+
+.nav .right{
+	float: right;
+}
+
+.nav a:hover{
+	color: #d7f3ff;
+}
+
+/*content模块样式*/
+.content .hospital-info .top{
+	height: 54px;
+	line-height: 54px;
+	border-bottom: 1px solid #dcdddd;
+}
+
+.content .hospital-info .top .top-caption{
+	float: left;
+	font-size: 18px;
+	color: #000;
+}
+
+.content .hospital-info .top .top-lat .item{
+	display: inline-block;
+	margin-left: 12px;
+	color: blue;
+}
+
+.content .hospital-info .top .top-lat span{
+	color: #000;
+}
+
+.content .hospital-info .top .top-caption a{
+	font-size: 14px;
+	color: #f29600;
+}
+
+.content .hospital-info .top .top-lat{
+	float: right;
+}
+
+.content .hospital-info .bottom{
+	height: 210px;
+	display: inline-block;
+	margin-top: 12px;
+}
+
+.content .hospital-info .bottom .hospital-img{
+	float: left;
+}
+
+.content .hospital-info .bottom .bottom-detail{
+	width: 455px;
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+	color: #888;
+	margin-left: 45px;
+}
+
+.content .hospital-info .bottom .bottom-detail p{
+	margin-bottom: 10px;
+}
+
+.content .hospital-info .bottom .bottom-detail .icon-address,
+.content .hospital-info .bottom .bottom-detail .icon-web,
+.content .hospital-info .bottom .bottom-detail .icon-tel,
+.content .hospital-info .bottom .bottom-detail .icon-route{
+	width: 20px;
+	height: 20px;
+	float: left;
+	background: url(../img/icon-web.png) 0 0 no-repeat;
+}
+
+.content .hospital-info .bottom .bottom-detail .icon-web{
+	background-position-y: -20px;
+}
+
+.content .hospital-info .bottom .bottom-detail .icon-tel{
+	background-position-y: -40px;
+}
+
+.content .hospital-info .bottom .bottom-detail .icon-route{
+	background-position-y: -60px;
+}
+
+.content .hospital-info .bottom .map{
+	float: right;
+	width: 250px;
+	height: 164px;
+}
+
+/*页面下部tab选中状态*/
+.content .tab .link_focus{
+	color: #fff;
+	background: #60bff2;
+}
+
+.content .con_focus{
+	display: block;
+}
+
+/*医院预约部分*/
+
+.hospital-content .appointment .appointment-register .caption{
+	height: 44px;
+	line-height: 44px;
+	text-indent: 27px;
+	font-size: 16px;
+	color: #606060;
+	background: #f4f6fa;
+}
+
+.hospital-content .appointment .appointment-register .item{
+	line-height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid #f4f6fa;
+}
+
+.hospital-content .appointment .appointment-register .item .item-type{
+	width: 144px;
+	height: 90px;
+	float: left;
+	text-align: center;
+	color: #888;
+	background: #f2fbff;
+}
+
+.hospital-content .appointment .appointment-register .item .item-departments{
+	width: 557px;
+	height: 90px;
+	text-align: left;
+	float: left;
+}
+
+.hospital-content .appointment .appointment-register .item .item-departments a{
+	width: 110px;
+	height: 30px;
+	line-height: 30px;
+	color: #514e4d;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.hospital-content .appointment .appointment-rule .caption{
+	height: 44px;
+	line-height: 44px;
+	text-indent: 10px;
+	font-size: 16px;
+	color: #606060;
+	background: #f4f6fa;
+}
+
+.hospital-content .appointment .appointment-rule .caption span{
+	font-size: 12px;
+	color: #00b3ea;
+	margin-left: 5px;
+}
+
+.hospital-content .appointment .appointment-rule .content{
+	width: 274px;
+	height: 230px;
+	font-size: 12px;
+	line-height: 20px;
+	overflow: auto;
+}
+
+.hospital-content .appointment .appointment-rule .item{
+	margin-bottom: 5px;
+}
+
+.hospital-content .appointment .appointment-rule .item .item-type{
+	display: inline-block;
+	padding-left: 10px;
+	color: #555;
+	vertical-align: top;
+}
+
+.hospital-content .appointment .appointment-rule .item .item-content{
+	width: 172px;
+	display: inline-block;
+	padding-left: 10px;
+	color: #888;
+}
+
+.hospital-content .query-cancel{
+	line-height: 26px;
+	text-align: center;
+	padding: 150px 0 ;
+}
+
+.hospital-content .query-cancel .text{
+	height: 22px;
+	border: 1px solid #666;
+}
+
+.hospital-content .query-cancel .button{
+	width: 80px;
+	height: 26px;
+	text-align: center;
+	background: #60bff2;
+}
+
+.footer{
+	line-height: 70px;
+	text-align: center;
+	font-size: 12px;
+	color: #acacac;
+}

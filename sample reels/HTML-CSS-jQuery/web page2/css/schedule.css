@@ -1,0 +1,197 @@
+/*科室排班表*/
+.content .schedule{
+	height: 552px;
+	margin-top: 40px;
+	position: relative;
+}
+
+.content .schedule .caption{
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	color: #000;
+	padding-left: 10px;
+}
+
+/*返回hospital_detail.html页面*/
+.content .schedule .caption .back{
+	font-size: 14px;
+	color: #00b3ec;
+	margin-left: 10px;
+}
+
+/*排班表*/
+.content .schedule .time-table{
+	overflow: hidden;
+	float: left;
+	width: 728px;
+	height: 320px;
+	font-size: 14px;
+	border-bottom: 1px solid #dcdddd;
+	position: relative;
+}
+
+/*排班表左右前进和后退部分*/
+.content .schedule .time-table .left,
+.content .schedule .time-table .right{
+	width: 34px;
+	height: 320px;
+	border-bottom: 1px solid #dcdddd;
+	border-left: 1px solid #dcdddd;
+	z-index: 9;
+}
+
+.content .schedule .time-table .left{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.content .schedule .time-table .right{
+	position: absolute;
+	left: 694px;
+	top: 0;
+}
+
+.content .schedule .time-table .left .prev,
+.content .schedule .time-table .right .next{
+	height: 47px;
+}
+
+.content .schedule .time-table .left .prev:hover,
+.content .schedule .time-table .right .next:hover{
+	cursor: pointer;
+}
+
+.content .schedule .time-table .left .prev img,
+.content .schedule .time-table .left .right img{
+	width: 100%;
+	height: 100%;
+}
+
+.content .schedule .time-table .left .item{
+	height: 91px;
+	line-height: 91px;
+	text-align: center;
+	background: #f2f8ff;
+}
+
+.content .schedule .time-table .right .item{
+	height: 273px;
+	background: #f2f8ff;
+}
+
+/*排班表表格内容部分*/
+.content .schedule .time-table .table{
+	width: 99999px;
+	position: absolute;
+	left: 35px;
+	right: 0;
+	transition: all .5s;
+}
+
+.content .schedule .time-table .table .week{
+	display: block;
+	float: left;
+}
+
+.content .schedule .time-table .table .item{
+	width: 94px;
+	height: 320px;
+	float: left;
+}
+
+.content .schedule .time-table .table .item .date{
+	height: 42px;
+	text-align: center;
+	color: #868686;
+	padding-top: 3px;
+	border-top: 1px solid #dcdddd;
+	border-left: 1px solid #dcdddd;
+}
+
+.content .schedule .time-table .table .item .remain{
+	height: 91px;
+	line-height: 91px;
+	text-align: center;
+	border-top: 1px solid #dcdddd;
+	border-left: 1px solid #dcdddd;
+}
+
+.content .schedule .time-table .table .item .remain:nth-child(3){
+	color: #4ab4ed;
+	background: #e0eefd;
+}
+
+/*预约规则*/
+.content .schedule .appointment-rule{
+	float: right;
+	width: 270px;
+	height: 320px;
+	border: 1px solid #dcdddd;
+	border-bottom: none;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.content .schedule .appointment-rule .caption{
+	height: 30px;
+	line-height: 30px;
+	padding: 10px 0 0 10px;
+	font-size: 14px;
+	color: #000;
+}
+
+.content .schedule .appointment-rule .content{
+	width: 274px;
+	height: 230px;
+	font-size: 12px;
+	line-height: 20px;
+	padding-top: 0;
+}
+
+.content .schedule .appointment-rule .item{
+	margin-bottom: 5px;
+}
+
+.content .schedule .appointment-rule .item .item-type{
+	padding-left: 10px;
+	color: #555;
+}
+
+.content .schedule .appointment-rule .item .item-content{
+	width: 172px;
+	padding-left: 10px;
+	color: #888;
+}
+
+/*提示信息部分*/
+.content .schedule .tip{
+	width: 999px;
+	height: 72px;
+	line-height: 72px;
+	text-align: center;
+	font-size: 18px;
+	color: #9f9f9f;
+	border: 1px solid #dcdddd;
+	position: absolute;
+	top: 370px;
+	margin-bottom: 112px;
+}
+
+.content .schedule .tip span{
+	padding-left: 10px;
+}
+
+/*在消息前插入info图标*/
+.content .schedule .tip span:before{
+	content: ' ';
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	left: 390px;
+	top: 50%;
+	margin-top: -10px;
+	background: url('../img/icon-info.jpg') no-repeat;
+}
