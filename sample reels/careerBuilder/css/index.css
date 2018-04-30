@@ -1,0 +1,317 @@
+*{
+	/*清除margin，padding*/
+	margin: 0;
+	padding: 0;
+	/*设置网页字体*/
+	font-family: "Microsoft YaHei UI";
+}
+.clear{
+	clear: both;/*清除浮动*/
+}
+.header{
+	width: 100%;
+	height: 100px;
+	background: #07cbc9;
+	position: fixed;
+	z-index: 9;
+}
+.header .logo{
+	float: left;/*logo左浮动*/
+	width: 260px;
+	height: 48px;
+	margin-top: 26px;
+	margin-left: 120px;
+}
+.header .nav{
+	float: right;/*导航右浮动*/
+	padding-right: 80px;
+}
+.header .nav li{
+	float: left;
+	list-style: none;/*导航项列表样式设为无*/
+	width: 80px;
+	line-height: 100px;
+	text-align: center;
+	color: #fff;
+}
+.header .nav li:hover{
+	background: #000;
+	cursor: pointer;/*导航悬停效果*/
+}
+.banner img{
+	width: 100%;
+	height: 606px;/*设置banner高度，宽度自适应*/
+	padding-top: 100px;
+}
+.banner .coverLayer{/*banner遮罩层*/
+	width: 100%;
+	height: 606px;
+	background: #000;
+	position: absolute;
+	top: 100px;
+	left: 0;
+	opacity: 0.5;
+}
+.banner .topLayer{/*banner最高层*/
+	text-align: center;
+	width: 600px;
+	height: 606px;
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	margin-left: -300px;
+}
+.banner .topLayer .text{
+	width: 493px;
+	height: 44px;
+	margin-bottom: 23px;
+	padding-left: 10px;
+	background: none;/*去除输入框背景色*/
+	border: 2px solid gray;
+	color: #fff;
+}
+.banner .topLayer .comment{
+	width: 493px;
+	height: 118px;
+	margin-bottom: 26px;
+	line-height: 40px;
+	padding-left: 10px;
+	background: none;
+	border: 2px solid gray;
+	color: #fff;
+}
+.banner .topLayer .text:hover{/*文本框悬停效果*/
+	border: 2px solid #07cbc9;
+}
+.banner .topLayer .comment:hover{/*文本框悬停效果*/
+	border: 2px solid #07cbc9;
+}
+.banner .topLayer .send{/*banner最高层send按钮*/
+	width: 126px;
+	height: 42px;
+	background: none;
+	border: 2px solid gray;
+	color: gray;
+	font-weight: bold;
+}
+.banner .topLayer .send:hover{/*按钮悬停效果*/
+	background: #07cbc9;
+	color: #fff;
+	border: 2px solid #07cbc9;
+}
+.title{/*ABOUT区和GALLERY区标题*/
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 21px;
+}
+.about .top{
+	position: relative;
+}
+hr{/*所有的短横线*/
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+.des{/*ABOUT区和GALLERY区标题下文字*/
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 35px;
+	color: gray;
+}
+.about .middle{
+	margin-bottom: 100px;
+}
+.about .middle .bb3{
+	width: 650px;
+	height: 435px;
+	/*bb3.jpg居中*/
+	position: relative;
+	left: 50%;
+	margin-left: -325px;
+}
+.about .middle .left{/*ABOUT区中间左边半遮罩部分*/
+	position: absolute;
+	left: 14%;
+	top: 975px;
+}
+.about .middle .left .left_top{/*ABOUT区左边上面的文字*/
+	font-size: 38px;
+}
+.about .middle .left .left_cover{/*ABOUT区中间左边遮罩层*/
+	width: 390px;
+	height: 260px;
+	background: #fff;
+	opacity: 0.5;
+	border:1px solid gray;
+}
+.about .middle .left .left_bottom{/*ABOUT区左边下面的文字*/
+	width: 390px;
+	height: 260px;
+	position: relative;
+	top: -260px;
+	font-size: 16px;
+	line-height: 25px;
+	padding: 30px 25px;
+}
+.about .middle .left .left_bottom .explore{/*EXPLORE按钮*/
+	width: 109px;
+	height: 45px;
+	border: 2px solid #000;
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 15px;
+}
+.about .middle .left .left_bottom .explore:hover{
+	background: #fff;
+	color: #000;
+}
+.about .middle .right{/*ABOUT区中间右边部分*/
+	position: absolute;
+	left: 75%;
+	top: 973px;
+}
+.about .middle .right .box{
+	position: relative;
+	width: 252px;
+	height: 152px;
+	border: 1px solid #07cbc9;
+	margin-bottom: 30px;
+}
+.about .middle .right .box .number{/*ABOUT区中间右边部分上面的数字*/
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 84px;
+	text-align: center;
+}
+.about .middle .right .box .category{/*ABOUT区中间右边部分下面部分*/
+	font-size: 20px;
+	line-height: 67px;
+	text-align: center;
+}
+.about .bottom .square{/*ABOUT区下面square部分*/
+	display: inline;
+}
+.about .bottom .square img{/*ABOUT区下面四个图片*/
+	width: 25%;
+	height: 400px;
+	float: left;
+}
+.about .bottom .square .triangle_left{/*ABOUT区下面图片上指向左的三角形*/
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 1697px;
+	left: 25%;
+	margin-left: -32px;
+	border-top: 16px solid transparent;
+	border-right: 32px solid #07cbc9;
+	border-bottom: 16px solid transparent;
+}
+.about .bottom .blue_box{/*ABOUT区下面四个文字区域*/
+	width: 25%;
+	height: 400px;
+	background: #07cbc9;
+	float: left;
+}
+.about .bottom .blue_box .text1,.text2,.text3{
+	color: #fff;
+	padding-left: 48px;
+	padding-bottom: 22px;
+}
+.about .bottom .blue_box .text2,.text3{
+	padding-right: 48px;
+}
+.about .bottom .blue_box .text1{/*ABOUT区下面文字区域最大的文字*/
+	font-size: 30px;
+	padding-top: 37px;
+}
+.about .bottom .blue_box .text2{/*ABOUT区下面文字区域第二大的文字*/
+	font-size: 18px;
+	line-height: 30px;
+	color: #ececec;
+}
+.about .bottom .blue_box .text3{/*ABOUT区下面文字区域最小的文字*/
+	font-size: 14px;
+	line-height: 20px;
+	color: #dcdcdc;
+}
+.about .bottom .blue_box .explore{/*ABOUT区下面文字区域的EXPLORE按钮*/
+	width: 103px;
+	height: 43px;
+	border: 2px solid #000;
+	background: #000;
+	color: #fff;
+	font-size: 14px;
+	margin-top: 15px;
+	position: relative;
+	left: 50%;
+	margin-left: -52px;
+}
+.about .bottom .blue_box .explore:hover{
+	background: #fff;
+	color: #000;/*EXPLORE按钮悬停效果*/
+}
+.about .bottom .square:nth-child(2) .triangle_left{
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 1697px;
+	left: 75%;
+	margin-left: -32px;
+	border-top: 16px solid transparent;
+	border-right: 32px solid #07cbc9;
+	border-bottom: 16px solid transparent;
+}
+.about .bottom .square:nth-child(3) .triangle_right{/*ABOUT区下面图片上指向右的三角形*/
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 2097px;
+	left: 25%;
+	border-top: 16px solid transparent;
+	border-left: 32px solid #07cbc9;
+	border-bottom: 16px solid transparent;
+}
+.about .bottom .square:nth-child(4) .triangle_right{
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 2097px;
+	left: 75%;
+	border-top: 16px solid transparent;
+	border-left: 32px solid #07cbc9;
+	border-bottom: 16px solid transparent;
+}
+.gallery .picture{/*GALLERY区*/
+	width: 1179px;
+	height: 644px;
+	margin: 0 auto;
+	padding-bottom: 65px;
+}
+.gallery .picture .pic{/*GALLERY区的6个盒子*/
+	width: 360px;
+	height: 305px;
+	float: left;
+	margin: 15px;
+}
+.gallery .picture .pic .pic_img{
+	width: 100%;
+	height: 240px;/*GALLERY区的图片*/
+}
+.gallery .picture .picName{
+	height: 65px;
+	color: #fff;
+	background: #000;
+	line-height: 65px;
+	padding-left: 15px;
+}
+.footer{
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #fff;
+	background: #07cbc9;
+}
