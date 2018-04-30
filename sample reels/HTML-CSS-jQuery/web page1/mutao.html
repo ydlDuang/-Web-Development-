@@ -1,0 +1,1608 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>慕淘网</title>
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/ui.css">
+	<script type="text/javascript" src="http://cdn.bootcss.com/jquery/1.12.4/jquery.js"></script>
+</head>
+<body>
+	<!--登录页-->
+	<div class="layer">
+		<div class="cover-layer"></div>
+		<div class="box">
+			<div class="box-tab">
+				<a class="tab-login tab_focus" href="#1">登录</a>
+				<a class="tab-register" href="#1">注册</a>
+			</div>
+			<div class="box-close"></div>
+			<div class="box-content">
+				<div class="login-content">
+					<input class="user" type="text" placeholder="请输入登录邮箱/手机号">
+					<p class="tip"></p>
+					<input class="password" type="password" placeholder="6-16位密码，区分大小写，不能用空格">
+					<p class="tip"></p>
+					<div class="checkbox"><input type="checkbox">下次自动登录</div>
+					<a href="#">忘记密码</a>
+					<input class="btn-login" type="button" value="登录">
+					<div class="other-login">
+						<div><img src="img/icon/xinlang.png"></div>
+						<div><img src="img/icon/weixin.png"></div>
+						<div><img src="img/icon/qq.png"></div>
+					</div>
+				</div>
+				<div class="register-content clearfix" style="display:none;">
+					<input class="user" type="text" placeholder="请输入登录邮箱/手机号">
+					<p class="tip"></p>
+					<input class="veri-code" type="text" placeholder="请输入验证码">
+					<div class="veri-image"></div>
+					<p class="tip"></p>
+					<input class="btn-register" type="button" value="注册">
+					<div class="other-login">
+						<div><img src="img/icon/xinlang.png"></div>
+						<div><img src="img/icon/weixin.png"></div>
+						<div><img src="img/icon/qq.png"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--顶部区-->
+	<div id="top" class="top">
+		<div class="wrap clearfix">
+			<p class="welcome">
+				<a id="login" class="login" href="#">亲，请登陆</a>&nbsp;
+				<a id="register" class="register" href="#">免费注册</a>&nbsp;
+				<a href="#">手机逛慕淘</a>
+			</p>
+			<div class="top-nav">
+				<div class="item">
+					<ul>
+						<li class="select-name">我的慕淘<div class="icon"></div></li>
+						<li class="select-list"><a href="#">已关注的宝贝</a></li>
+						<li class="select-list"><a href="#">我的足迹</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li class="select-name">收藏夹<div class="icon"></div></li>
+						<li class="select-list"><a href="#1">收藏的宝贝</a></li>
+						<li class="select-list"><a href="#1">收藏的店铺</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li class="select-name">商品分类</li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li class="select-name">卖家中心<div class="icon"></div></li>
+						<li class="select-list"><a href="#1">免费开店</a>
+						<li class="select-list"><a href="#1">已卖出的宝贝</a></li>
+						<li class="select-list"><a href="#1">出售中的宝贝</a></li>
+						<li class="select-list"><a href="#1">卖家服务市场</a></li>
+						<li class="select-list"><a href="#1">卖家培训中心</a></li>
+						<li class="select-list"><a href="#1">体验中心</a></li>
+					</ul>
+				</div>
+				<div class="item">
+					<ul>
+						<li class="select-name">联系客服<div class="icon"></div></li>
+						<li class="select-list"><a href="#1">消费者客服</a></li>
+						<li class="select-list"><a href="#1">卖家客服</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--logo区-->
+	<div id="header" class="header">
+		<div class="wrap clearfix">
+			<a class="logo" href="index.html"><img src="img/logo.png"></a>
+			<div class="search">
+				<input class="search-text" type="text" placeholder="灵魂美食一元抢"><input class="search-button" type="button" value="搜索">
+			</div>
+			<div class="cart">
+				<span class="cart-icon">购物车&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+				<span class="cart-num">0</span>
+				<div class="cart-content">
+					<div class="caption">最新加入的商品</div>
+					<div class="list-group">
+						<div class="item clearfix">
+							<img src="img/cart/1.png">
+							<a class="item-name" href="#">adidas&nbsp;阿迪达斯&nbsp;训练&nbsp;男子</a>
+							<div class="item-price">￥335×1</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/2.png">
+							<a class="item-name" href="#">玉兰油多效修护三部曲套装</a>
+							<div class="item-price">￥199×2</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/3.png">
+							<a class="item-name" href="#">Apple&nbsp;iPhone&nbsp;7&nbsp;(A1660)</a>
+							<div class="item-price">￥6188×1</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/4.png">
+							<a class="item-name" href="#">飞利浦面条机&nbsp;HR2356/31</a>
+							<div class="item-price">￥659×4</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/5.png">
+							<a class="item-name" href="#">逻辑G29&nbsp;力反馈游戏方向</a>
+							<div class="item-price">￥2999×1</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/1.png">
+							<a class="item-name" href="#">adidas&nbsp;阿迪达斯&nbsp;训练&nbsp;男子</a>
+							<div class="item-price">￥335×1</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/2.png">
+							<a class="item-name" href="#">玉兰油多效修护三部曲套装</a>
+							<div class="item-price">￥199×2</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/3.png">
+							<a class="item-name" href="#">Apple&nbsp;iPhone&nbsp;7&nbsp;(A1660)</a>
+							<div class="item-price">￥6188×1</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/4.png">
+							<a class="item-name" href="#">飞利浦面条机&nbsp;HR2356/31</a>
+							<div class="item-price">￥659×4</div>
+							<a class="item-delete">×</a>
+						</div>
+						<div class="item clearfix">
+							<img src="img/cart/5.png">
+							<a class="item-name" href="#">逻辑G29&nbsp;力反馈游戏方向</a>
+							<div class="item-price">￥2999×1</div>
+							<a class="item-delete">×</a>
+						</div>
+					</div>
+					<div class="cart-bottom">
+						<div class="summary">共<span>27</span>件商品&nbsp;共计&nbsp;￥<span>0.00</span></div>
+						<input class="gotoCart" type="button" value="去购物车">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--导航区-->
+	<div id="nav" class="nav">
+		<div class="wrap">
+			<div class="menu">商品分类
+				<div class="menu-list ui-menu">
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">家用电器</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">手机、运营商、数码</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">电脑、办公</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">家具、家具、家装、厨具</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">男装、女装、童装、内衣</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">化妆、清洁、宠物</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">运动户外、钟表</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">汽车、汽车用品</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">母婴、玩具乐器</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">食品、酒类、生鲜、特产</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">医药保健</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">图书、音像、电子书</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">彩票、旅行、充值、票务</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ui-menu-item">
+						<a href="#1" class="ui-menu-item-type">理财、众筹、白条、保险</a>
+						<a href="#1" class="ui-menu-item-icon">></a>
+						<div class="ui-menu-item-detail">
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									电器
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机</a>
+									<a href="#1">对讲机</a>
+									<a href="#1">以旧换新</a>
+									<a href="#1">手机推荐</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									冰箱
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">充话费/流量</a>
+									<a href="#1">170选号</a>
+									<a href="#1">合约机</a>
+									<a href="#1">办套餐</a>
+									<a href="#1">选号码</a>
+									<a href="#1">网络宽带</a>
+									<a href="#1">京东通信</a>
+									<a href="#1">中国移动</a>
+									<a href="#1">中国联通</a>
+									<a href="#1">中国电信</a>
+								</div>
+							</div>
+							<div class="ui-menu-item-detail-group">
+								<div class="ui-menu-item-detail-group-caption">
+									洗衣机
+								</div>
+								<div class="ui-menu-item-detail-group-list">
+									<a href="#1">手机壳</a>
+									<a href="#1">贴膜</a>
+									<a href="#1">手机存储卡</a>
+									<a href="#1">数据线</a>
+									<a href="#1">充电器</a>
+									<a href="#1">手机耳机</a>
+									<a href="#1">创意配件</a>
+									<a href="#1">手机饰品</a>
+									<a href="#1">手机电池</a>
+									<a href="#1">苹果周边</a>
+									<a href="#1">移动电源</a>
+									<a href="#1">蓝牙耳机</a>
+									<a href="#1">手机支架</a>
+									<a href="#1">车载配件</a>
+									<a href="#1">拍照配件</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="hospital.html" class="link">数码城</a>
+			<a href="#" class="link">天黑黑</a>
+			<a href="#" class="link">团购</a>
+			<a href="#" class="link">发现</a>
+			<a href="#" class="link ">二手特价</a>
+			<a href="#" class="link ">名品汇</a>
+		</div>
+	</div>
+	<!--banner区-->
+	<div id="banner" class="banner clearfix">
+		<div class="wrap">
+			<div class="banner-container">
+			<div class="banner-slider ui-slider">
+				<div class="ui-slider-wrap">
+					<a href="#0" class="item"><img src="img/focus-carousel/1.png" alt="banner-1"></a>
+					<a href="#1" class="item"><img src="img/focus-carousel/2.jpg" alt="banner-2"></a>
+					<a href="#2" class="item"><img src="img/focus-carousel/3.jpg" alt="banner-3"></a>
+					<a href="#3" class="item"><img src="img/focus-carousel/4.jpg" alt="banner-4"></a>
+					<a href="#4" class="item"><img src="img/focus-carousel/5.jpg" alt="banner-5"></a>
+					<a href="#5" class="item"><img src="img/focus-carousel/6.jpg" alt="banner-6"></a>
+				</div>
+				<div class="ui-slider-arrow">
+					<a href="#l" class="item left">&nbsp;</a>
+					<a href="#t" class="item right">&nbsp;</a>
+				</div>
+				<div class="ui-slider-process">
+					<a href="#0" class="item item_focus">&nbsp;</a>
+					<a href="#1" class="item">&nbsp;</a>
+					<a href="#2" class="item">&nbsp;</a>
+					<a href="#2" class="item">&nbsp;</a>
+					<a href="#2" class="item">&nbsp;</a>
+					<a href="#2" class="item">&nbsp;</a>
+				</div>
+			</div>
+			<div class="banner-news">
+				<div class="caption clearfix">
+					<span class="text">慕快报</span>
+					<a class="more" href="#2">更多&nbsp;></a>
+				</div>
+				<div class="box">
+					<div class="top">
+						<div class="line">
+							<span>[特惠]</span>精选图书每满150减50
+						</div>
+						<div class="line">
+							<span>[公告]</span>因广州图书仓搬仓升级配送延迟
+						</div>
+						<div class="line">
+							<span>[特惠]</span>爆款手机12期免息&nbsp;抽奖赢电视
+						</div>
+						<div class="line">
+							<span>[公告]</span>广东、福建受台风影响配送延迟
+						</div>
+						<div class="line">
+							<span>[特惠]</span>大闸蟹领券满399减180
+						</div>
+					</div>
+					<table class="middle" frame="hsides">
+						<tr>
+							<td><img src="img/icon/1.png"><br>话费</td>
+							<td><img src="img/icon/2.png"><br>机票</td>
+							<td><img src="img/icon/3.png"><br>电影票</td>
+							<td><img src="img/icon/4.png"><br>游戏</td>
+						</tr>
+						<tr>
+							<td><img src="img/icon/5.png"><br>彩票</td>
+							<td><img src="img/icon/6.png"><br>加油卡</td>
+							<td><img src="img/icon/7.png"><br>酒店</td>
+							<td><img src="img/icon/8.png"><br>火车票</td>
+						</tr>
+						<tr>
+							<td><img src="img/icon/9.png"><br>众筹</td>
+							<td><img src="img/icon/10.png"><br>理财</td>
+							<td><img src="img/icon/11.png"><br>礼品卡</td>
+							<td><img src="img/icon/12.png"><br>白条</td>
+						</tr>
+					</table>
+					<div class="bottom">
+						<img src="img/ad.png">
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		
+	</div>
+	<!--楼层区-->
+	<div id="content" class="content">
+		<div class="wrap clearfix">
+			<div id="f1" class="content-item">
+				<div class="caption">
+					<div class="floor">1F</div>
+					<div class="floor-name">服装鞋包</div>
+					<div class="tab">
+						<a class="tab_focus" href="#1">大牌</a>
+						<a href="#1">男装</a>
+						<a href="#1">女装</a>
+						<div class="floor-arrow"></div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="item">
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">1匡威男棒球开衫外套2015</div>
+							<div class="list-price">￥479</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">addidas&nbsp;阿迪达斯&nbsp;训练&nbsp;男子</div>
+							<div class="list-price">￥335</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.jpg">
+							<div class="list-name">必迈BMAI一体织跑步短袖T恤</div>
+							<div class="list-price">￥159</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.jpg">
+							<div class="list-name">NBA袜子半毛圈运动高邦棉袜</div>
+							<div class="list-price">￥65</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">特步官方运动帽男女帽子2016</div>
+							<div class="list-price">￥69</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">KELME足球训练防寒防风手套</div>
+							<div class="list-price">￥4999</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/2.jpg">
+							<div class="list-name">战地吉普三合一冲锋衣</div>
+							<div class="list-price">￥289</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/2.jpg">
+							<div class="list-name">探路者户外男士徒步鞋</div>
+							<div class="list-price">￥369</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">羽绒服2015秋冬新款轻薄男士</div>
+							<div class="list-price">￥399</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">溯溪鞋涉水鞋户外鞋</div>
+							<div class="list-price">￥689</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/3.jpg">
+							<div class="list-name">旅行背包多功能双肩背包</div>
+							<div class="list-price">￥269</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/3.jpg">
+							<div class="list-name">户外旅行双肩背包OS0099</div>
+							<div class="list-price">￥99</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/6.jpg">
+							<div class="list-name">2adidas&nbsp;阿迪达斯&nbsp;训练&nbsp;男子</div>
+							<div class="list-price">￥335</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/4.jpg">
+							<div class="list-name">3必迈BMAI-体织跑步短袖T恤</div>
+							<div class="list-price">￥159</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="f2" class="content-item">
+				<div class="caption">
+					<div class="floor">2F</div>
+					<div class="floor-name">个护美妆</div>
+					<div class="tab">
+						<a class="tab_focus" href="#1">热门</a>
+						<a href="#1">国际大牌</a>
+						<a href="#1">国际名品</a>
+						<div class="floor-arrow"></div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="item">
+						<div class="list">
+							<img src="img/floor/5.jpg">
+							<div class="list-name">1韩束红石榴鲜活水盈七件套装</div>
+							<div class="list-price">￥169</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/5.jpg">
+							<div class="list-name">温碧泉八杯水亲亲水润五件套装</div>
+							<div class="list-price">￥198</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/5.jpg">
+							<div class="list-name">御泥坊红酒透亮矿物蚕丝面膜贴</div>
+							<div class="list-price">￥79.9</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/5.jpg">
+							<div class="list-name">激烈手动剃须刀锋隐致护</div>
+							<div class="list-price">￥228</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/5.jpg">
+							<div class="list-name">Mediheal水润保湿面膜</div>
+							<div class="list-price">￥119</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/5.jpg">
+							<div class="list-name">纳益其尔芦荟舒缓保湿凝胶</div>
+							<div class="list-price">￥39</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">宝拉珍选基础护肤旅行四件套</div>
+							<div class="list-price">￥299</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">温碧泉透芯润五件套装</div>
+							<div class="list-price">￥257</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">玉兰油多效修护三部曲套装</div>
+							<div class="list-price">￥199</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">LOREAL火山岩控油清痘洁面膏</div>
+							<div class="list-price">￥36</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">百雀羚水嫩倍现盈透精华水</div>
+							<div class="list-price">￥139</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/1.png">
+							<div class="list-name">珀莱雅新柔皙莹润三件套</div>
+							<div class="list-price">￥99</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/5.jpg">
+							<div class="list-name">1韩束红石榴鲜活水盈七件套装</div>
+							<div class="list-price">￥169</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/5.jpg">
+							<div class="list-name">1韩束红石榴鲜活水盈七件套装</div>
+							<div class="list-price">￥169</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="f3" class="content-item">
+				<div class="caption">
+					<div class="floor">3F</div>
+					<div class="floor-name">手机通讯</div>
+					<div class="tab">
+						<a class="tab_focus" href="#1">热门</a>
+						<a href="#1">品质优选</a>
+						<a href="#1">心机尝鲜</a>
+						<div class="floor-arrow"></div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="item">
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">1摩托罗拉&nbsp;Mote&nbsp;Z&nbsp;Play</div>
+							<div class="list-price">￥3999</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">Apple&nbsp;iPhone&nbsp;7&nbsp;(A1660)</div>
+							<div class="list-price">￥6188</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">小米&nbsp;Note&nbsp;全网通&nbsp;白色</div>
+							<div class="list-price">￥999</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">小米5&nbsp;全网通&nbsp;标准版&nbsp;3GB内存</div>
+							<div class="list-price">￥1999</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">荣耀7i&nbsp;海岛蓝&nbsp;移动联通4G手机</div>
+							<div class="list-price">￥1099</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">乐视（Le）乐2（X620）32GB</div>
+							<div class="list-price">￥1099</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">OPPO&nbsp;R9&nbsp;4GB+64GB内存版</div>
+							<div class="list-price">￥2499</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">没蓝note3&nbsp;全网通公开版</div>
+							<div class="list-price">￥899</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">飞利浦&nbsp;X818&nbsp;香槟金&nbsp;全网通4G</div>
+							<div class="list-price">￥1998</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">三星&nbsp;Galaxy&nbsp;S7（G9300）</div>
+							<div class="list-price">￥4088</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">华为&nbsp;荣耀7&nbsp;双卡双待双通</div>
+							<div class="list-price">￥1128</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">努比亚(nubia)Z7Max(NX505J)</div>
+							<div class="list-price">￥728</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">1摩托罗拉&nbsp;Mote&nbsp;Z&nbsp;Play</div>
+							<div class="list-price">￥3999</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/7.jpg">
+							<div class="list-name">1摩托罗拉&nbsp;Mote&nbsp;Z&nbsp;Play</div>
+							<div class="list-price">￥3999</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="f4" class="content-item">
+				<div class="caption">
+					<div class="floor">4F</div>
+					<div class="floor-name">家用电器</div>
+					<div class="tab">
+						<a class="tab_focus" href="#1">热门</a>
+						<a href="#1">大家电</a>
+						<a href="#1">生活电器</a>
+						<div class="floor-arrow"></div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="item">
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">1暴风TV&nbsp;超体电视&nbsp;40X&nbsp;40英寸</div>
+							<div class="list-price">￥1299</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">小米（MI）L55M5-AA&nbsp;55英寸</div>
+							<div class="list-price">￥3699</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">飞利浦HTD5580/93&nbsp;音响</div>
+							<div class="list-price">￥2999</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">金门子H108&nbsp;5.1套装音响组合</div>
+							<div class="list-price">￥1198</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">方太ENJOY云魔方抽油烟机</div>
+							<div class="list-price">￥4390</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">美的60升预约洗浴电热手气</div>
+							<div class="list-price">￥1099</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">九阳电饭煲多功能智能电饭煲</div>
+							<div class="list-price">￥159</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">美的电烤箱家用大容量</div>
+							<div class="list-price">￥329</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">奥克斯(AUX)936破壁料理机</div>
+							<div class="list-price">￥1599</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">飞利浦面条机&nbsp;HR2356/31</div>
+							<div class="list-price">￥665</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">松下NU-JA100W&nbsp;家用蒸烤箱</div>
+							<div class="list-price">￥1799</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/8.jpg">
+							<div class="list-name">飞利浦咖啡机&nbsp;HD7751/00</div>
+							<div class="list-price">￥1299</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/8-1.jpg">
+							<div class="list-name">1暴风TV&nbsp;超体电视&nbsp;40X&nbsp;40英寸</div>
+							<div class="list-price">￥1299</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/8-1.jpg">
+							<div class="list-name">1暴风TV&nbsp;超体电视&nbsp;40X&nbsp;40英寸</div>
+							<div class="list-price">￥1299</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="f5" class="content-item">
+				<div class="caption">
+					<div class="floor">5F</div>
+					<div class="floor-name">电脑数码</div>
+					<div class="tab">
+						<a class="tab_focus" href="#1">热门</a>
+						<a href="#1">电脑/平板</a>
+						<a href="#1">潮流影音</a>
+						<div class="floor-arrow"></div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="item">
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">1戴尔成就Vostro&nbsp;3800-R6308</div>
+							<div class="list-price">￥2999</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">联想IdeaCentre&nbsp;C560</div>
+							<div class="list-price">￥5399</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">惠普260-p039cn台式电脑</div>
+							<div class="list-price">￥3099</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">华硕飞行堡垒旗舰版FX-PRO</div>
+							<div class="list-price">￥6599</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">惠普(HP)暗影精灵Ⅱ代PLUS</div>
+							<div class="list-price">￥4390</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">联想(Lenovo)小新700电竞版</div>
+							<div class="list-price">￥1099</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">游戏背光牧马人机械手感键盘</div>
+							<div class="list-price">￥499</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">罗技iK1200背光键盘保护套</div>
+							<div class="list-price">￥799</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">西部数据2.5英寸移动硬盘1TB</div>
+							<div class="list-price">￥419</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">新睿翼3TB&nbsp;2.5英寸&nbsp;移动硬盘</div>
+							<div class="list-price">￥849</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">Rii&nbsp;mini&nbsp;i28无限迷你键盘鼠标</div>
+							<div class="list-price">￥349</div>
+						</div>
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">罗技G29&nbsp;力反馈游戏方向盘</div>
+							<div class="list-price">￥2999</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">1戴尔成就Vostro&nbsp;3800-R6308</div>
+							<div class="list-price">￥2999</div>
+						</div>
+					</div>
+					<div class="item" style="display:none;">
+						<div class="list">
+							<img src="img/floor/9.jpg">
+							<div class="list-name">1戴尔成就Vostro&nbsp;3800-R6308</div>
+							<div class="list-price">￥2999</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ui-flow-floor">
+				<a class="current" href="#f1">F1</a>
+				<a href="#f2">F2</a>
+				<a href="#f3">F3</a>
+				<a href="#f4">F4</a>
+				<a href="#f5">F5</a>
+			</div>
+		</div>
+	</div>
+	<!--友情链接区-->
+	<div class="friendly-link wrap">
+		<div class="link">
+			<div class="link-type">消费者保障</div>
+			<div class="links">
+				<a href="#1">保障范围</a>
+				<a href="#1">退货退款流程</a>
+				<a href="#1">服务中心</a>
+				<a href="#1">更多特色服务</a>
+			</div>
+		</div>
+		<div class="link">
+			<div class="link-type">新手上路</div>
+			<div class="links">
+				<a href="#1">新手专区</a>
+				<a href="#1">消费警示</a>
+				<a href="#1">交易安全</a>
+				<a href="#1">24小时在线帮助</a>
+				<a href="#1">免费开店</a>
+			</div>
+		</div>
+		<div class="link">
+			<div class="link-type">付款方式</div>
+			<div class="links">
+				<a href="#1">快捷支付</a>
+				<a href="#1">信用卡</a>
+				<a href="#1">余额宝</a>
+				<a href="#1">蜜蜂花啊</a>
+				<a href="#1">货到付款</a>
+			</div>
+		</div>
+		<div class="link">
+			<div class="link-type">慕淘特殊</div>
+			<div class="links">
+				<a href="#1">手机慕淘</a>
+				<a href="#1">慕淘信</a>
+				<a href="#1">大众评审</a>
+				<a href="#1">B格指南</a>
+			</div>
+		</div>
+	</div>
+	<!--页脚区-->
+	<div id="footer" class="footer">
+		<div class="footer-link">
+			<a href="#1">关于慕淘</a>
+			<a href="#1">合作伙伴</a>
+			<a href="#1">营销中心</a>
+			<a href="#1">廉政举报</a>
+			<a href="#1">联系客服</a>
+			<a href="#1">开放平台</a>
+			<a href="#1">诚征英才</a>
+			<a href="#1">联系我们</a>
+			<a href="#1">网站地图</a>
+			<a href="#1">法律声明</a>
+			<a href="#1">知识产权</a>
+		</div>
+		<div class="copyright">
+			Copyright &copy; 2017慕课网版权所有
+		</div>
+	</div>
+	<!--右侧导航区-->
+	<div class="flow-banner">
+		<div class="item">
+			<img src="img/icon/13.png">
+			<div class="tip">会员</div>
+		</div>
+		<div class="item">
+			<img src="img/icon/14.png">
+			<div class="tip">购物车</div>
+		</div>
+		<div class="item">
+			<img src="img/icon/15.png">
+			<div class="tip">我的关注</div>
+		</div>
+		<div class="item">
+			<img src="img/icon/16.png">
+			<div class="tip">我的销售</div>
+		</div>
+		<div class="item backTop">
+			<img src="img/icon/17.png">
+			<div class="tip">顶部</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/ui.js"></script>
+	<script type="text/javascript" src="js/data.js"></script>
+</body>
+</html>
