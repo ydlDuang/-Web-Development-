@@ -1,0 +1,269 @@
+*,p{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.clearfix{
+	clear: both;
+}
+
+/*头部*/
+header{
+	width: 100%;
+	height: 93px;
+	background: #2e2e2e;
+}
+header .logo{
+	width: 141px;
+	height: 31px;
+	margin: 31px 0 0 8%;
+	float: left;
+}
+header .logo img{
+	width: 100%;
+	height: 100%;
+}
+header nav{
+	height: 93px;
+	line-height: 93px;
+	text-align: center;
+	float: right;
+	margin-right: 5%;
+}
+header nav a{
+	display: block;
+	float: left;
+	margin-right: 43px;
+	color: #fff;
+}
+header nav a:hover{
+	color: #f46208;
+}
+
+/*banner部分*/
+.banner{
+	width: 100%;
+	height: 678px;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+}
+.banner .coverLayer{
+	width: 100%;
+	height: 130px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -65px;
+	text-align: center;
+}
+.banner .coverLayer p{
+	color: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+.banner .coverLayer p span{
+	font-size: 65px;
+}
+.banner .coverLayer p{
+	font-size: 25px;
+}
+
+/*portfolio区样式*/
+.portfolio,.stats,.team,.contact{
+	margin: 0 auto;
+	text-align: center;
+}
+.portfolio h1,.stats h1,.team h1,.contact h1{
+	color: #f46208;
+	font-size: 36px;
+	margin-top: 65px;
+}
+.portfolio p,.stats p,.team p,.contact p{
+	margin: 45px 0 62px 0;
+	line-height: 26px;
+}
+.portfolio nav a{
+	display: inline-block;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	color: #f46208;
+	border: 1px solid #f46208;
+	margin-right: 15px;
+}
+.portfolio nav a:last-of-type{
+	margin-right: 0;
+}
+.portfolio nav a:hover{
+	background: #f46208;
+	color: #fff;
+}
+.portfolio .portfolio-image{
+	width: 100%;
+	height: 560px;
+	margin-top: 50px;
+}
+.portfolio .portfolio-image div{
+	width: 25%;
+	height: 50%;
+	float: left;
+	background: url(../img/portfolio-nav-img.jpg) 0 0 no-repeat;
+	background-size: 400% 200%;
+}
+.portfolio .portfolio-image div:nth-child(2){
+	background-position: 35% 0;
+}
+.portfolio .portfolio-image div:nth-child(3){
+	background-position: 69% 0;
+}
+.portfolio .portfolio-image div:nth-child(4){
+	background-position: 100% 0;
+	background-size: 440% 200%;
+}
+.portfolio .portfolio-image div:nth-child(5){
+	background-position: 0 100%;
+}
+.portfolio .portfolio-image div:nth-child(6){
+	background-position: 35% 100%;
+}
+.portfolio .portfolio-image div:nth-child(7){
+	background-position: 69% 100%;
+}
+.portfolio .portfolio-image div:nth-child(8){
+	background-position: 100% 100%;
+	background-size: 440% 200%;
+}
+
+/*stats区样式*/
+.stats .stats-item dl{
+	display: inline-block;
+	margin-right: 130px;
+	margin-bottom: 50px;
+}
+.stats .stats-item dl:last-of-type{
+	margin-right: 0;
+}
+.stats .stats-item dl dd:first-of-type{
+	color: #000;
+	font-size: 16px;
+	line-height: 55px;
+}
+.stats .stats-item dl dd:last-of-type{
+	color: #f46208;
+	font-size: 25px;
+}
+
+/*team区样式*/
+.team{
+	width: 100%;
+	height: 665px;
+	background: #2e2e2e;
+}
+.team h1{
+	padding-top: 65px;
+}
+.team p{
+	color: #fff;
+}
+.team .team-item dl{
+	display: inline-block;
+	margin-right: 50px;
+	margin-bottom: 50px;
+	color: #fff;
+}
+.team .team-item dl:last-of-type{
+	margin-right: 0;
+}
+.team .team-item dl dd:first-of-type{
+	font-size: 16px;
+	line-height: 25px;
+}
+.team .team-item dl dd:last-of-type{
+	font-size: 12px;
+}
+
+/*contact区样式*/
+.contact form{
+	width: 65%;
+	height: 428px;
+	margin: 0 auto;
+	position: relative;
+}
+.contact form input[name=username],
+.contact form input[name=email]{
+	display: block;
+	width: 47%;
+	height: 53px;
+	line-height: 53px;
+	padding: 0 1%;
+	font-size: 14px;
+	border: 1px solid #bfbfbf;
+}
+.contact form input[name=username]{
+	float: left;
+}
+.contact form input[name=email]{
+	float: right;
+}
+.contact form textarea{
+	width: 98%;
+	height: 272px;
+	font-size: 16px;
+	padding: 0 1%;
+	margin-top: 17px;
+	margin-bottom: 27px;
+}
+/*textarea的提示文本垂直居中*/
+.contact form textarea::-webkit-input-placeholder{
+	height: 272px;
+	line-height: 272px;
+}
+.contact form textarea:-moz-placeholder{
+	height: 272px;
+	line-height: 272px;
+}
+/*Firefox版本4-18*/
+.contact form textarea::-moz-placehoder{
+	height: 272px;
+	line-height: 272px;
+}
+/*Firefox版本19+*/
+.contact form textarea:-ms-input-placeholder{
+	height: 272px;
+	line-height: 272px;
+}
+.contact form .submit{
+	width: 200px;
+	height: 60px;
+	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -100px;
+	background: #f46208;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+/*footer区样式*/
+footer{
+	width: 100%;
+	height: 110px;
+	line-height: 110px;
+	text-align: center;
+	color: #fff;
+	background: #000;
+	margin-top: 110px;
+}
